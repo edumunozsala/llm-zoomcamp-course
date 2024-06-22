@@ -320,6 +320,19 @@ Let's send the prompt to OpenAI. What's the response?
 
 Note: you can replace OpenAI with Ollama. See module 2.
 
+**Answer**:
+
+Just need to run the following code:
+```python
+response = client.chat.completions.create(
+        model='gpt-4o',
+        messages=[{"role": "user", "content": prompt}]
+)
+    
+output = response.choices[0].message.content
+print(output)
+```
+
 ## Bonus: calculating the costs (ungraded)
 
 Suppose that on average per request we send 150 tokens and receive back 250 tokens.
@@ -341,9 +354,3 @@ For 1000 requests, we produce 150,000 input tokens and 250,000 output tokens. th
 250,000 * 0.015 / 1000= 3.75
 
 Total: 4.5
-
-
-## Submit the results
-
-* Submit your results here: https://courses.datatalks.club/llm-zoomcamp-2024/homework/hw1
-* It's possible that your answers won't match exactly. If it's the case, select the closest one.
