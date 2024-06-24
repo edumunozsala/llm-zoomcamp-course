@@ -13,8 +13,8 @@ What we will do:
 * Create a Q&A system for answering questions about these documents 
 
 ## Homework
-You can review the homework [here](homework.md). 
-And you can run the code [here](homework.ipynb)
+You can review the homework [here](homework/homework.md). 
+And you can run the code [here](homework/homework.ipynb)
 
 ## 1.1 Introduction to LLM and RAG
 

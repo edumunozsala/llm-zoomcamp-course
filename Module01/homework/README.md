@@ -2,6 +2,8 @@
 
 In this homework, we'll learn more about search and use Elastic Search for practice. 
 
+Link to the notebook with code and answers [HERE](homework.ipynb)
+
 ## Q1. Running Elastic 
 
 Run Elastic Search 8.4.3, and get the cluster information. If you run it on localhost, this is how you do it:
