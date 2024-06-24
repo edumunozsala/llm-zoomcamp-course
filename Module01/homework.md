@@ -275,6 +275,40 @@ What's the length of the resulting prompt? (use the `len` function)
 
 **Answer**: 1462
 
+Now, we create a function to generate our prompt following the desired format:
+
+```python
+def build_prompt(query, search_results):
+    prompt_template = """
+You're a course teaching assistant. Answer the QUESTION based on the CONTEXT from the FAQ database.
+Use only the facts from the CONTEXT when answering the QUESTION.
+
+QUESTION: {question}
+
+CONTEXT: 
+{context}
+""".strip()
+
+    context = ""
+    
+    for doc in search_results:
+        context = context + f"Q: {doc['question']}\nA: {doc['text']}\n\n"    
+        
+    prompt = prompt_template.format(question=query, context=context).strip()
+    return prompt
+```
+
+And call this function:
+```python
+prompt = build_prompt(query, result_docs)
+
+print("Length of the prompt: ", len(prompt))
+```
+```text
+Length of the prompt:  1463
+```
+
+
 ## Q6. Tokens
 
 When we use the OpenAI Platform, we're charged by the number of 
@@ -348,9 +382,12 @@ On June 17, the prices for gpt4o are:
 
 You can redo the calculations with the values you got in Q6 and Q7.
 
-**Answer**:
+**Answer**: 
+
 For 1000 requests, we produce 150,000 input tokens and 250,000 output tokens. then,
+
 150,000 * 0.005 /1000 = 0.75 
+
 250,000 * 0.015 / 1000= 3.75
 
-Total: 4.5
+**Total: 4.5**
