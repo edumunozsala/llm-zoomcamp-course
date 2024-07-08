@@ -25,7 +25,7 @@ Implement a search engine
 * OpenAI API
 * Simple RAG with Open AI
 
-### [Open-source LLMs and self-hosting LLMs]()
+### [Open-source LLMs and self-hosting LLMs](module02/)
 
 * Simple RAG with Open-Source LLMs
 
