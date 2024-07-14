@@ -29,7 +29,7 @@ Implement a search engine
 
 * Simple RAG with Open-Source LLMs
 
-### [Vector databases and retrieval techniques]()
+### [Vector databases and retrieval techniques](Module03/)
 
 * Embeddings
 * Vector search
