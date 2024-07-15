@@ -3,6 +3,7 @@
 ## Homework
 
 Homework [here](homework/homework.md)
+
 homework [Notebook](homework/homework.ipynb)
 
 ## 3.1 Introduction to Vector Search
@@ -58,12 +59,3 @@ Links:
 Links:
 
 * [Notebook](eval/evaluate-vector.ipynb)
-
-## Homework
-
-See [here](../cohorts/2024/03-vector-search/homework.md)
-
-
-# Notes
-
-* Did you take notes? Add them above this line (Send a PR with *links* to your notes)
