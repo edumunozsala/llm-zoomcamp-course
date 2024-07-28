@@ -35,7 +35,15 @@ Implement a search engine
 * Vector search
 * Adding vectors to RAG
 
-### [Workshop: dlt]()
+### [Workshop: dlt](./workshops/dlt)
+
+In this hands-on workshop, we’ll learn how to build a data ingestion pipeline using dlt to load data from a REST API into LanceDB so you can have an always up to date RAG.
+
+​We’ll cover the following steps:
+
+Extract data from REST APIs
+Loading and vectorizing into LanceDB, which unlike other vector DBs stores the data and the embeddings
+Incremental loading
 
 
 ### [LLM orchestration and ingestion pipelines]()
