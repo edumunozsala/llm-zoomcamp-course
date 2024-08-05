@@ -17,7 +17,7 @@ Implement a search engine
 * Video: https://www.youtube.com/watch?v=nMrGK5QgPVE
 * Code: https://github.com/alexeygrigorev/build-your-own-search-engine
 
-### [Introduction to LLMs and RAG](Module01/)
+### 1. [Introduction to LLMs and RAG](Module01/)
 
 * LLMs and RAG
 * Preparing the environment 
@@ -25,11 +25,11 @@ Implement a search engine
 * OpenAI API
 * Simple RAG with Open AI
 
-### [Open-source LLMs and self-hosting LLMs](Module02/)
+### 2. [Open-source LLMs and self-hosting LLMs](Module02/)
 
 * Simple RAG with Open-Source LLMs
 
-### [Vector databases and retrieval techniques](Module03/)
+### 3. [Vector databases and retrieval techniques](Module03/)
 
 * Embeddings
 * Vector search
@@ -45,19 +45,25 @@ Extract data from REST APIs
 Loading and vectorizing into LanceDB, which unlike other vector DBs stores the data and the embeddings
 Incremental loading
 
+### 4. [Evaluation and monitoring](Module04/)
 
-### [LLM orchestration and ingestion pipelines]()
+* Offline evaluation of RAG
+* Cosine and LLM-as-a-Judge metrics 
+* Tracking chat history and user feedback
+* Creating dashboards with Grafana for visualization
+
+### 5. [LLM orchestration and ingestion]()
 
 * Ingesting data with Mage
 
-### [Monitoring and Guardrails]()
 
-* Monitoring with ground-truth
-* Metrics (RAGAs)
-* Dashboarding with Grafana for visualization
-* Monitoring chat
-* Guardrails
+### 6. [Best practices]()
 
+* Best practices
+
+### LLM Zoomcamp 2024 Competition
+
+[More details](cohorts/2024/competition/)
 
 ### [Tips and Tricks for advanced RAG systems]()
 
