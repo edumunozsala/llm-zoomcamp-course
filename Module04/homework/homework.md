@@ -313,7 +313,3 @@ avg_rouge_score    0.313205
 dtype: float64
 ```
 
-## Submit the results
-
-* Submit your results here: https://courses.datatalks.club/llm-zoomcamp-2024/homework/hw4
-* It's possible that your answers won't match exactly. If it's the case, select the closest one.

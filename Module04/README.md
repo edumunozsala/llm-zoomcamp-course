@@ -12,6 +12,7 @@ collect chat history and user feedback.
 ## Homework
 
 See Homework [here](homework/homework.md)
+
 See Homework [Notebook](homework/homework.ipynb)
 
 ## 4.1 Introduction to monitoring answer quality 
