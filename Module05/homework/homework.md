@@ -253,6 +253,7 @@ What's the last document id?
 
 Also note the index name.
 
+**Answer**: 
 
 ## Q5. Testing the retrieval
 
