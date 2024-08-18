@@ -253,7 +253,9 @@ What's the last document id?
 
 Also note the index name.
 
-**Answer**: 
+**Answer**: last document_id 6fc3236a
+
+And the index name is `documents_20240818_0732`.
 
 ## Q5. Testing the retrieval
 
@@ -264,7 +266,44 @@ Let's use the following query: "When is the next cohort?"
 
 What's the ID of the top matching result?
 
+**Answer**: bf024675
 
+We create a query:
+```python
+query="When is the next cohort?"
+
+search_query = {
+        "size": 3,
+        "query": {
+            "bool": {
+                "must": {
+                    "multi_match": {
+                        "query": query,
+                        "fields": ["question^4", "text"],
+                        "type": "best_fields"
+                    }
+                },
+            }
+        }
+}
+
+response = es_client.search(index=index_name, body=search_query)
+```
+
+Output:
+```text
+{'total': {'value': 68, 'relation': 'eq'},
+ 'max_score': 33.77578,
+ 'hits': [{'_index': 'documents_20240818_5845',
+   '_id': 'W9ojZZEByGRstKugv3Mf',
+   '_score': 33.77578,
+   '_source': {'text': 'Summer 2025 (via Alexey).',
+    'section': 'General course-related questions',
+    'question': 'When will the course be offered next?',
+    'course': 'llm-zoomcamp',
+    'document_id': 'bf024675'}},
+  ...
+```
 ## Q6. Reindexing
 
 Our FAQ document changes: every day course participants add
@@ -278,7 +317,17 @@ Let's re-execute the entire pipeline with the updated data.
 
 For the same query "When is the next cohort?". What's the ID of the top matching result?
 
+**Answer**: b6fa77f3
 
+We run thre same code as before but with the document id
+
+```text
+[{'text': 'Summer 2026.',
+  'section': 'General course-related questions',
+  'question': 'When is the next cohort?',
+  'course': 'llm-zoomcamp',
+  'document_id': 'b6fa77f3'},
+```
 
 ## Submit the results
 
