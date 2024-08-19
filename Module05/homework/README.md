@@ -326,8 +326,3 @@ We run thre same code as before but with the document id
   'course': 'llm-zoomcamp',
   'document_id': 'b6fa77f3'},
 ```
-
-## Submit the results
-
-* Submit your results here: https://courses.datatalks.club/llm-zoomcamp-2024/homework/hw5
-* It's possible that your answers won't match exactly. If it's the case, select the closest one.

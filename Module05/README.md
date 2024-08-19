@@ -3,6 +3,7 @@
 ## Homework
 
 Link to the homework doc [here](homework/homework.md).
+
 Link to the notebook with retrieval code [here](homework/homework.ipynb)
 
 ## Getting started
@@ -86,12 +87,3 @@ After exporting the chunks and embeddings, we can test the search query to retri
 
 Automation is key to maintaining and updating your system.
 This section demonstrates how to schedule and trigger daily runs for your data pipelines, ensuring up-to-date and consistent data processing.
-
-## Homework
-
-See [here](../cohorts/2024/05-orchestration/homework.md).
-
-# Notes
-
-* First link goes here
-* Did you take notes? Add them above this line (Send a PR with *links* to your notes)
