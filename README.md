@@ -52,9 +52,14 @@ Incremental loading
 * Tracking chat history and user feedback
 * Creating dashboards with Grafana for visualization
 
-### 5. [LLM orchestration and ingestion]()
+### 5. [LLM orchestration and ingestion](Module05/)
 
 * Ingesting data with Mage
+* Chunking
+* Tokenization
+* Embedding
+* Export
+* Retrieval
 
 
 ### 6. [Best practices]()
